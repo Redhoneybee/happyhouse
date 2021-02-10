@@ -1,3 +1,19 @@
+
+export interface HappyHouse {
+    PAN_NM: string;            // 공고명
+    PAN_NT_ST_DT: string;      // 공고일
+    CNP_CD_NM: string;         // 지역
+    UPP_AIS_TP_NM: string;     // 공고 유형
+    AIS_TP_CD_NM: string;      // 공고 세부 유형
+    PAN_SS: string;            // 공고 상태
+    DTL_URL: string;           // 상세 url
+}
+
+export interface OptStatus {
+    cnp_cd: number;            // 지역
+    pan_ss: string;            // 공고 상태
+};
+
 interface CNP_CD_INT {
     code: number;
     desc: string;

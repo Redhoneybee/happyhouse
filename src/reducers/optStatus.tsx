@@ -3,7 +3,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 // cnd_cd : 지역 코드
 // pan_ss : 공고 코드
 
-interface OptStatus {
+export interface OptStatus {
     cnd_cd: number;
     pan_ss: string;
 };

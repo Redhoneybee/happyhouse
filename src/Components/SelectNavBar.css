@@ -43,6 +43,25 @@ nav.select_nav .bar{
 nav.select_nav .gnb{
     position : relative;
     top : 4px;
+    z-index : -50;
+    opacity : 0;
+    pointer-events: none;
+    box-shadow : 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+        0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    -moz-transform: translateY(-25px);
+    -webkit-transform : translateY(-25px);
+    transform :translateY(-25px);
+    -moz-transition : .3s ease-in-out;
+    -webkit-transition : .3s ease-in-out;
+    transition : .3s ease-in-out;
+}
+
+nav.select_nav.visible .gnb{
+    pointer-events: initial;
+    opacity: 1;
+    -moz-transform: translateY(0px);
+    -webkit-transform : translateY(0px);
+    transform :translateY(0px);
 }
 
 ul.gnb li{
@@ -70,11 +89,14 @@ ul.gnb li select option{
     border : none;
 }
 
+
 @keyframes top_down_nav{
     from{
+        -moz-transform :translateY(-80px);
         -webkit-transform :translateY(-80px);
         transform :translateY(-80px);
     }to{
+        -moz-transform :translateY(0px);
         -webkit-transform :translateY(0px);
         transform : translateY(0px);
     }

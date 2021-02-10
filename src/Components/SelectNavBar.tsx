@@ -5,12 +5,29 @@ import { faCog } from '@fortawesome/free-solid-svg-icons';
 
 
 const SelectNavBar: React.FC = () => {
+    const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>): void => {
+        e.preventDefault();
+        const nav: any = document.querySelector('nav.select_nav');
+
+        const classNames = nav.className.split(' ');
+
+        let finded: string = "";
+
+        finded = classNames.find((className: string) => className === "visible");
+
+        if (finded) nav.classList.remove('visible');
+        else nav.classList.add('visible');
+    }
+
     return (
         <nav className="select_nav animated">
             <div className="bar">
                 <h3 className="title">
                     <strong>H</strong>appy<strong>H</strong>ouse</h3>
-                <button className="btn set">
+                <button
+                    className="btn set"
+                    onClick={handleClick}
+                >
                     <FontAwesomeIcon icon={faCog} />
                 </button>
             </div>

@@ -4,28 +4,28 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 // pan_ss : 공고 코드
 
 export interface OptStatus {
-    cnd_cd: number;
+    cnp_cd: number;
     pan_ss: string;
 };
 
 const initialState: OptStatus = {
-    cnd_cd: 11,
-    pan_ss: "공고중"
+    cnp_cd: -1,
+    pan_ss: ""
 };
 
 const optStatusSlice = createSlice({
     name: 'optionsStatus',
     initialState,
     reducers: {
-        changeCnd(state, action: PayloadAction<number>) {
-
+        changeCnp(state, action: PayloadAction<number>) {
+            state.cnp_cd = action.payload;
         },
         changePan(state, action: PayloadAction<string>) {
-
+            state.pan_ss = action.payload;
         }
     }
 });
 
 
-export const { changeCnd, changePan } = optStatusSlice.actions;
+export const { changeCnp, changePan } = optStatusSlice.actions;
 export default optStatusSlice;

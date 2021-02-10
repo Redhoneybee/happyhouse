@@ -7,7 +7,7 @@ import "./global.css";
 const App: React.FC = () => {
 
   return (
-    <div className="container">
+    <div className="container flex">
       <SelectNavBar />
       <HashRouter>
         <Route path="/" exact component={Home} />

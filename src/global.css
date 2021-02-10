@@ -54,3 +54,8 @@ table {
 .btn:focus{
     outline :none;
 }
+.flex {
+	display : flex;
+	justify-content: center;
+	align-items : center;
+}

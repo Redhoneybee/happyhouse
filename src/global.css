@@ -38,6 +38,14 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+a{
+	text-decoration: none;
+	color : black;
+}
+a:visited{
+	color : black;
+}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;

@@ -1,0 +1,136 @@
+section.contents_wrap{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    width : 100%;
+    -moz-animation : fade_in_out .5s linear;
+    -webkit-animation : fade_in_out .5s linear;
+    animation : fade_in_out .5s linear;
+}
+section.contents_wrap .houses_title{
+    width : 100%;
+    padding : 10px 0px;
+    text-align : center;
+    font-weight : bold;
+    color : black;
+    font-size : 24px;
+    margin-bottom : 10px;
+}
+div.houses{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    width : 100%;
+    background-color : white;
+    border-top : 3px solid #eb596e;    
+    border-bottom : 3px solid #eb596e;
+    
+}
+div.houses .not_found{
+    text-align : center;
+    font-size : 16px;
+    line-height : 20px;
+    font-weight : bold;
+    padding : 20px 25px;
+}
+
+div.houses .house{
+    width : 100%;
+    margin-top : 20px;
+    height : 250px;
+    overflow-y : auto;
+}
+table.house thead th{
+    width : 40%;
+    padding : 5px 0px;
+    padding-bottom : 25px;
+    font-size : 18px;
+}
+
+table.house thead th:nth-of-type(1){
+    width : 60%;;
+}
+
+table.house tbody td{
+    padding : 5px;
+    text-align: center;
+    font-size : 16px;
+    line-height : 24px;
+}
+
+
+@keyframes fade_in_out{
+    from{
+        opacity : 0;
+    }to{
+        opacity : 1;
+    }
+}
+
+@media screen and (min-width : 768px){
+
+    section.contents_wrap .houses_title{
+        width : 600px;
+        font-size : 24px;
+    }
+    div.houses{
+        width : 600px;
+        border : 3px solid #eb596e;
+        border-radius : 20px;
+        height : 340px;
+    }
+    
+    table.house thead th{
+        width : 30%;
+        font-size : 20px;
+    }
+    
+    table.house thead th:nth-of-type(1){
+        width : 70%;
+    }
+    
+
+    table.house tbody td{
+        font-size : 18px;
+        line-height : 24px;
+    }
+    div.houses .not_found{
+        font-size : 20px;
+        line-height : 24px;
+    }
+    
+}
+
+@media screen and (min-width : 986px){
+
+    section.contents_wrap .houses_title{
+        width : 780px;
+        font-size : 28px;
+    }
+    div.houses{
+        width : 780px;
+        border : 4px solid #eb596e;
+        border-radius : 20px;
+        height : 420px;
+    }
+    
+    table.house thead th{
+        width : 30%;
+        font-size : 24px;
+    }
+    
+    table.house thead th:nth-of-type(1){
+        width : 70%;
+    }
+    
+
+    table.house tbody td{
+        font-size : 20px;
+        line-height : 24px;
+    }
+    div.houses .not_found{
+        font-size : 24px;
+        line-height : 26px;
+    }
+    
+}

@@ -18,3 +18,25 @@
 
 https://github.com/Redhoneybee/happyhouse-server
 
+
+## 관련 사진 & 간단 영상
+
+ * 데이터가 존재하지 않을 경우
+ 
+![moblie-no-data](https://user-images.githubusercontent.com/60745551/107600078-ff8f2500-6c65-11eb-9f4f-b1960169d668.PNG)
+
+ 
+ * 데이터가 존재하는 경우(모바일)
+ 
+![moblie-is-data](https://user-images.githubusercontent.com/60745551/107600147-37966800-6c66-11eb-8dcf-9801b190b47a.PNG)
+
+
+ * 데이터가 존재하는 경우(테블릿 & PC)
+ 
+![tablit-is-data](https://user-images.githubusercontent.com/60745551/107600180-4d0b9200-6c66-11eb-8cca-ef7e418f8a19.PNG)
+
+
+ * 관련 영상
+ 
+ [![Watch the video](https://user-images.githubusercontent.com/60745551/107600223-775d4f80-6c66-11eb-9c6e-7347d913f8b7.mp4)
+

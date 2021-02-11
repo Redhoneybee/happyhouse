@@ -11,7 +11,7 @@ const ShowTbody: React.FC<TbodyProps> = ({ houses }) => {
         <>
             {houses.map((house, index) =>
                 <tr key={index} >
-                    <td>{house.PAN_NM}</td>
+                    <td><a href={house.DTL_URL}>{house.PAN_NM}</a></td>
                     <td>{house.PAN_NT_ST_DT}</td>
                 </tr>
             )
@@ -49,6 +49,12 @@ const ShowTable: React.FC = () => {
                     <div className="not_found">죄송합니다.<br />관련된 공고가 현재 없습니다.</div>
                 }
             </div>
+
+            {houses.length > 0 &&
+                <div className="comment">
+                    해당 공고를 클릭하시면 관련 사이트로 이동합니다.
+                        </div>
+            }
         </section>
     );
 }
